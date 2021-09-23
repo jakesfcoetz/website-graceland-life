@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/graceklr/public_html/
+    - /bin/cp gabout.html $DEPLOYPATH
