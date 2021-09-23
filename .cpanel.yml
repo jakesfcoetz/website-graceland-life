@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/graceklr/public_html/
+    - /bin/cp index.html $DEPLOYPATH
     - /bin/cp gabout.html $DEPLOYPATH
+    - /bin/cp gconnect.html $DEPLOYPATH
+    # - /bin/cp -R images $DEPLOYPATH
