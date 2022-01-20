@@ -1,26 +1,7 @@
-import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar,
-} from "@ionic/react";
-import ExploreContainer from "../components/ExploreContainer";
-import "./Home.css";
+import "./Home.scss";
 
 const Home: React.FC = () => {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Graceland Life</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <ExploreContainer />
-      </IonContent>
-    </IonPage>
-  );
+  return <div className="page-home">HOME</div>;
 };
 
 export default Home;

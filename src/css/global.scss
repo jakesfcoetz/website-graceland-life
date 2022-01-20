@@ -1,5 +1,17 @@
 :root {
-  .color_white {
-    background-color: azure;
+  * {
+    background-color: white;
+  }
+
+  .main-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div + div {
+      flex-grow: 1;
+    }
   }
 }
