@@ -1,6 +1,36 @@
-.nav-bar {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  img {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .nav-border {
+      height: 1px;
+      width: 20vw;
+      background-color: var(--graceland-color-text);
+    }
+
+    ion-button {
+      --background: white;
+      --border-radius: 20px;
+
+      --background-activated: blue;
+      --background-focused: red;
+      --background-hover: green;
+    }
+
+    ion-button:hover {
+      --background: rgba(var(--graceland-color-text-rgb), 0.1);
+    }
+  }
 }

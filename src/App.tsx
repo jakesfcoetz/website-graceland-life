@@ -31,7 +31,7 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonPage>
     <IonContent>
-      <div className="main-page">
+      <div className="main-page-container">
         <NavBarComponent />
         <Home />
       </div>

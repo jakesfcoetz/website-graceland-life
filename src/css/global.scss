@@ -1,9 +1,21 @@
 :root {
+  //--- Graceland colors
+  --graceland-color-blue: #3a416f;
+  --graceland-color-green: #2b727b;
+  --graceland-color-turquoise: #62a89e;
+  --graceland-color-text-rgb: 150, 150, 150;
+  --graceland-color-text: rgb(var(--graceland-color-text-rgb));
+
   * {
     background-color: white;
   }
 
-  .main-page {
+  p {
+    color: var(--graceland-color-text);
+    background-color: transparent;
+  }
+
+  .main-page-container {
     height: 100%;
     display: flex;
     flex-direction: column;
