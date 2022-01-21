@@ -16,17 +16,13 @@
 
     .nav-border {
       height: 1px;
-      width: 20vw;
+      width: 15vw;
       background-color: var(--graceland-color-text);
     }
 
     ion-button {
       --background: white;
       --border-radius: 20px;
-
-      --background-activated: blue;
-      --background-focused: red;
-      --background-hover: green;
     }
 
     ion-button:hover {
