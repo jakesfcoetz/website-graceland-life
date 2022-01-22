@@ -1,3 +1,0 @@
-Green		#2b727b
-Turcoise	#62a89e
-Blue		#3a416f
