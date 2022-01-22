@@ -1,5 +1,3 @@
-//--- Ionic
-import { IonCol, IonGrid, IonRow } from "@ionic/react";
 //--- Resources
 import slogan from "../images/slogan.png";
 import "./Home.scss";
@@ -17,22 +15,20 @@ SwiperCore.use([Autoplay, Pagination, Navigation, EffectFade]);
 
 const Home: React.FC = () => {
   return (
-    <IonGrid className="ion-page page page-home">
-      <IonRow>
-        <IonCol>
-          <img className="slogan" src={slogan} alt="logo" />
-        </IonCol>
-      </IonRow>
-      <IonRow>
-        <IonCol size="6" className="home-verse ion-align-self-center">
-          <p className="ion-text-center">
+    <div className="page-home">
+      <div>
+        <img className="slogan" src={slogan} alt="logo" />
+      </div>
+      <div className="container-home-bottom-row">
+        <div className="container-verse">
+          <h3>
             And they went out and preached everywhere, while the Lord kept
             working with them and confirming the message by the attesting signs
-            and miracles that closely accompanied it. Amen.​
-          </p>
-          <p className="ion-text-right">​Mark 16:20</p>
-        </IonCol>
-        <IonCol size="6">
+            and miracles that closely accompanied it. Amen.
+          </h3>
+          <p>Mark 16:20</p>
+        </div>
+        <div className="container-swiper">
           <Swiper
             centeredSlides={true}
             autoplay={{
@@ -75,9 +71,9 @@ const Home: React.FC = () => {
               />
             </SwiperSlide>
           </Swiper>
-        </IonCol>
-      </IonRow>
-    </IonGrid>
+        </div>
+      </div>
+    </div>
   );
 };
 
