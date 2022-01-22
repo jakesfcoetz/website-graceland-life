@@ -38,8 +38,8 @@ const App: React.FC = () => (
     <IonContent>
       <div className="main-page-container">
         <Home />
-        <About />
-        <Connect />
+        {/* <About /> */}
+        {/* <Connect /> */}
       </div>
     </IonContent>
   </IonPage>
