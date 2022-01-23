@@ -1,19 +1,42 @@
 .page-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/background.jpg");
 
+  div,
   ion-grid,
   ion-row,
   ion-col {
     background-color: transparent;
   }
 
-  h2 {
+  ion-grid {
+    padding: 5vh 0px;
+  }
+
+  h1,
+  h2,
+  h3 {
     color: white;
     background-color: transparent;
   }
 
+  .page-content {
+    width: 80vw;
+
+    .founder-img {
+      border-radius: 10%;
+      aspect-ratio: 1;
+      max-width: 70%;
+    }
+  }
+
   @media screen and (max-width: 1000px) {
+    .page-content {
+      width: 95vw;
+    }
   }
 }

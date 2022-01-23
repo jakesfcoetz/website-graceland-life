@@ -1,6 +1,4 @@
 :root {
-  /* ===== Graceland colors===== */
-
   /*===============================================
   =============== Graceland colors ================
   ===============================================*/
@@ -16,6 +14,9 @@
   /*===============================================
   =================== Main Doc ====================
   ===============================================*/
+
+  @import url("//fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic&subset=latin,latin-ext");
+
   * {
     background-color: white;
   }
@@ -28,7 +29,7 @@
     margin: 0px;
     height: 100%;
     background-color: var(--background-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Gentium Basic";
     color: var(--graceland-color-text);
   }
 
@@ -38,6 +39,7 @@
     margin: 0px;
     text-align: center;
     color: var(--graceland-color-text);
+    font-family: "Gentium Basic";
   }
 
   h1 {
@@ -55,7 +57,8 @@
   p {
     color: var(--graceland-color-text);
     background-color: transparent;
-    font-size: clamp(12px, 15px, 1.5vw);
+    font-size: clamp(15px, 20px, 1.5vw);
+    font-family: "Gentium Basic";
     margin: 0px;
   }
 }
