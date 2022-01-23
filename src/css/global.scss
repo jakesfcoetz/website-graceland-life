@@ -61,4 +61,8 @@
     font-family: "Gentium Basic";
     margin: 0px;
   }
+
+  ion-header:after {
+    display: none;
+  }
 }

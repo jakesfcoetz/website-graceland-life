@@ -1,4 +1,4 @@
-import { IonContent, IonPage, setupIonicReact } from "@ionic/react";
+import { IonContent, IonHeader, IonPage, setupIonicReact } from "@ionic/react";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -32,8 +32,10 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonPage>
-    <IonContent>
+    <IonHeader>
       <NavBarComponent />
+    </IonHeader>
+    <IonContent>
       <Home />
       <About />
       <Connect />
