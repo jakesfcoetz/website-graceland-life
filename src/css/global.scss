@@ -1,8 +1,11 @@
 :root {
-  //--- Graceland colors
-  --graceland-color-blue: #3a416f;
-  --graceland-color-green: #2b727b;
-  --graceland-color-turquoise: #62a89e;
+  /* ===== Graceland colors===== */
+  --graceland-color-blue-rgb: 58, 65, 111;
+  --graceland-color-blue: rgb(var(--graceland-color-blue-rgb));
+  --graceland-color-green-rgb: 43, 114, 123;
+  --graceland-color-green: rgb(var(--graceland-color-green-rgb));
+  --graceland-color-turquoise-rgb: 98, 168, 158;
+  --graceland-color-turquoise: rgb(var(--graceland-color-turquoise-rgb));
   --graceland-color-text-rgb: 150, 150, 150;
   --graceland-color-text: rgb(var(--graceland-color-text-rgb));
 
@@ -45,25 +48,17 @@
 
   p {
     color: var(--graceland-color-text);
+    background-color: transparent;
     font-size: clamp(12px, 15px, 1.5vw);
     margin: 0px;
   }
 
-  ion-header:after {
-    display: none;
-  }
-
-  .main-page-container {
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-
-    @media screen and (min-width: 500px) {
-      width: 70vw;
+  @media screen and (min-width: 500px) {
+    div.ion-page {
+      align-items: center;
+      ion-content {
+        width: 70vw;
+      }
     }
   }
 }

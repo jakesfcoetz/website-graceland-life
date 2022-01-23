@@ -1,12 +1,11 @@
-.header {
+.nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  img {
-    padding-top: 30px;
-    padding-bottom: 10px;
+  img.logo {
+    padding: 10px 0px;
   }
 
   .nav-bar {
@@ -16,7 +15,7 @@
 
     .nav-border {
       height: 1px;
-      width: 15vw;
+      width: 20vw;
       background-color: var(--graceland-color-text);
     }
 
@@ -26,7 +25,10 @@
     }
 
     ion-button:hover {
-      --background: rgba(var(--graceland-color-text-rgb), 0.1);
+      --background: rgba(var(--graceland-color-turquoise-rgb), 0.3);
+      p {
+        color: var(--graceland-color-blue);
+      }
     }
   }
 }

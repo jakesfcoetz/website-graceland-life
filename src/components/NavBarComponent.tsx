@@ -12,8 +12,8 @@ const NavBarComponent: React.FC<ContainerProps> = () => {
   }
 
   return (
-    <div className="header">
-      <img src={logo} alt="logo" />
+    <div className="nav">
+      <img className="logo" src={logo} alt="logo" />
       <div className="nav-bar">
         <div className="nav-border"></div>
         <IonButtons className="ion-padding-horizontal">
