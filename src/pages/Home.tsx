@@ -6,7 +6,7 @@ import SwiperComponent from "../components/SwiperComponent";
 
 const Home: React.FC = () => {
   return (
-    <div className="page-home">
+    <div id="home" className="page-home">
       <div>
         <img className="slogan" src={slogan} alt="logo" />
       </div>

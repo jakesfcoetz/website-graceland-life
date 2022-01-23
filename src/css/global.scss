@@ -1,5 +1,9 @@
 :root {
   /* ===== Graceland colors===== */
+
+  /*===============================================
+  =============== Graceland colors ================
+  ===============================================*/
   --graceland-color-blue-rgb: 58, 65, 111;
   --graceland-color-blue: rgb(var(--graceland-color-blue-rgb));
   --graceland-color-green-rgb: 43, 114, 123;
@@ -9,7 +13,9 @@
   --graceland-color-text-rgb: 150, 150, 150;
   --graceland-color-text: rgb(var(--graceland-color-text-rgb));
 
-  /* ===== Main Doc ===== */
+  /*===============================================
+  =================== Main Doc ====================
+  ===============================================*/
   * {
     background-color: white;
   }
@@ -51,14 +57,5 @@
     background-color: transparent;
     font-size: clamp(12px, 15px, 1.5vw);
     margin: 0px;
-  }
-
-  @media screen and (min-width: 500px) {
-    div.ion-page {
-      align-items: center;
-      ion-content {
-        width: 80vw;
-      }
-    }
   }
 }

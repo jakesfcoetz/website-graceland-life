@@ -1,6 +1,6 @@
 const Connect: React.FC = () => {
   return (
-    <div>
+    <div id="connect">
       <p>CONNECT</p>
     </div>
   );
