@@ -2,5 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/graceklr/public_html/
+    - /bin/rm -R /home/graceklr/repositories/slim
+    - /bin/rm -R /home/graceklr/repositories/slim2
     - /bin/rm -R $DEPLOYPATH/*
     - /bin/cp -R * $DEPLOYPATH
