@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/graceklr/public_html/
+    - export DEPLOYPATH=/home/graceklr/public_html/site/
     - /bin/rm -R $DEPLOYPATH/*
     - /bin/cp -R * $DEPLOYPATH
