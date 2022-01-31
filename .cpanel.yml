@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/graceklr/public_html/site/
     - /bin/mkdir -p $DEPLOYPATH
-    - /bin/rm -R $DEPLOYPATH/*
+    # - /bin/rm -R $DEPLOYPATH/*
     - /bin/cp -R * $DEPLOYPATH
